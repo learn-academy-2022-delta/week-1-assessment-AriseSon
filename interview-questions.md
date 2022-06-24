@@ -83,10 +83,51 @@ Research and define the following terms to the best of your ability.
 
 1. Higher Order Functions:
 
+Higher Order Functions are functions that can take at least three other functions as arguments. They can also return another function as an output. .map() & .filter() both have three build in parameters, the value, index & array.  
+
 2. Jest:
+
+Jest is a Javascript testing framework. Jest requires a describe method, a test method nested within that describe block & at least one expect method nested within the test's block. After invoking the describe method, test method & expect method, yarn jest will fail since we havent created the function yet. 
 
 3. Objects:
 
+Objects are collections of key:value pairs stoed in curly braces. The key = data type of symbol. The value = any valid data type in JS. EX name: "Ricky Fort"
+
+Objects can contain functions, that function is called a Method .this is a JS keyword that reference the object. EX this.name
+
+Objects can be single indexes of an array. .map() or .filter() can be use on objects in arrays. EX name = people.filter(value => value.name === "Ricky Fort")
+
+Objects Destructuring is the proccess of taking the properties of an object and putting them into individual variables. 
+EX 
+const person = {
+      firstName: "Ricky",
+      lastName: "Fort"
+     }
+
 4. Method:
+When a function belong to an object its called a method.
+EX 
+const person = {
+      firstName: "Ricky",
+      lastName: "Fort",
+      getData: function() {
+        return '${this.firstName}' last name is ${this.lastName}
+      }
+    }
+ It can be used to display the value in the return statement
 
 5. Classes:
+
+Classes are a type of function that contain data and behavior. Like functions, classes have their own scope. Constructor, this:, & new are JS keywords used to create and access information within the class.
+Ex
+class Ricky {
+  constructor(){
+    this.kidCount = 3
+
+const daddy = new Ricky()    
+  }
+}
+
+Constructor is a method for creating & initializing objects. this: is a JS keyword that refer to the objects it belong to. new is used when creating a new instance of a class.
+
+
